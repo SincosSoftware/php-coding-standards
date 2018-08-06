@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="Sincos">
+<ruleset name="Sincos Coding Standard">
     <description>Sincos Software PHP coding standard.</description>
 
-    <config name="installed_paths" value="vendor/wimg/php-compatibility/PHPCompatibility" />
+    <config name="installed_paths" value="../../wimg/php-compatibility/PHPCompatibility,../../slevomat/coding-standard" />
 
     <arg name="extensions" value="php"/>
 
@@ -75,27 +75,16 @@
         <exclude name="Squiz.WhiteSpace.ObjectOperatorSpacing.Before"/>
         <exclude name="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore"/>
     </rule>
-    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
-        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
-        <exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces.NoEmptyLineAfterOpeningBrace"/>
-        <exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces.NoEmptyLineBeforeClosingBrace"/>
-    </rule>
+
+    <!-- Include sniffs from Slevomat Coding Standard -->
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
 
     <!-- Include some extra Generic sniffs -->
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
     <rule ref="Generic.Commenting.Fixme"/>
-    <rule ref="Generic.Metrics.CyclomaticComplexity"/>
-    <rule ref="Generic.Metrics.NestingLevel">
-        <properties>
-            <property name="nestingLevel" value="3"/>
-        </properties>
-    </rule>
-    <rule ref="Generic.PHP.NoSilencedErrors"/>
-    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
-    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
-
-    <!-- Configure some sniffs -->
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
@@ -108,6 +97,19 @@
             </property>
         </properties>
     </rule>
+    <rule ref="Generic.Metrics.CyclomaticComplexity"/>
+    <rule ref="Generic.Metrics.NestingLevel">
+        <properties>
+            <property name="nestingLevel" value="3"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.PHP.NoSilencedErrors"/>
+
+    <!-- Include some extra PEAR sniffs -->
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
+    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
+
+    <!-- Configure some Squiz sniffs -->
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets">
         <severity>0</severity>
     </rule>

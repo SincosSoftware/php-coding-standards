@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a35de28ac094e853e8024616bfe35cd8",
-    "packages": [],
-    "packages-dev": [
+    "content-hash": "05c8418fefe5e6cbb9b47da0c19a29f6",
+    "packages": [
         {
             "name": "pdepend/pdepend",
             "version": "2.5.2",
@@ -506,6 +505,7 @@
             "time": "2018-07-17T13:42:26+00:00"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

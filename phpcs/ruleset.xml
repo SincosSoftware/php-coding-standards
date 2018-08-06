@@ -76,7 +76,7 @@
         <exclude name="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore"/>
     </rule>
 
-    <!-- Include some more sniffs -->
+    <!-- Include some extra Generic sniffs -->
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
     <rule ref="Generic.Commenting.Fixme"/>
@@ -86,7 +86,11 @@
             <property name="nestingLevel" value="3"/>
         </properties>
     </rule>
-    <!-- Ban some functions -->
+    <rule ref="Generic.PHP.NoSilencedErrors"/>
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
+    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
+
+    <!-- Configure some sniffs -->
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
@@ -99,12 +103,6 @@
             </property>
         </properties>
     </rule>
-    <rule ref="Generic.PHP.NoSilencedErrors"/>
-
-    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
-    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
-
-    <!-- Configure some sniffs -->
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets">
         <severity>0</severity>
     </rule>

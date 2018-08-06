@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05c8418fefe5e6cbb9b47da0c19a29f6",
+    "content-hash": "558f4379367d4fac225ba230d03c6168",
     "packages": [
         {
             "name": "pdepend/pdepend",
@@ -512,7 +512,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.1"
     },
     "platform-dev": []
 }

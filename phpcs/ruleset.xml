@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="Sincos">
+    <description>Sincos Software PHP coding standard.</description>
+
     <config name="installed_paths" value="vendor/wimg/php-compatibility/PHPCompatibility" />
 
     <arg name="extensions" value="php"/>

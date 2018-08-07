@@ -112,25 +112,7 @@
     <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
     <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
 
-    <!-- Configure PHPCompatibility rules -->
-    <rule ref="PHPCompatibility.PHP.ForbiddenNamesAsInvokedFunctions.Found">
-        <exclude-pattern>src/Sincos/*/src/Database/Migrations/*</exclude-pattern>
-        <exclude-pattern>src/Sincos/*/src/Http/routes.php</exclude-pattern>
-        <exclude-pattern>src/SincosApps/*/src/Database/Migrations/*</exclude-pattern>
-        <exclude-pattern>src/SincosApps/*/src/Http/routes.php</exclude-pattern>
-    </rule>
-
     <!-- Configure some Squiz sniffs -->
-    <rule ref="Squiz.Classes.ClassFileName">
-        <exclude-pattern>src/Sincos/*/src/Database/Migrations/*</exclude-pattern>
-        <exclude-pattern>src/SincosApps/*/src/Database/Migrations/*</exclude-pattern>
-    </rule>
-    <rule ref="Squiz.Commenting.BlockComment">
-        <exclude-pattern>config/*</exclude-pattern>
-    </rule>
-    <rule ref="Squiz.Commenting.InlineComment">
-        <exclude-pattern>config/*</exclude-pattern>
-    </rule>
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets">
         <severity>0</severity>
     </rule>

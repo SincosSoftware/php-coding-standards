@@ -81,7 +81,7 @@
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
 
-    <!-- Include some extra Generic sniffs -->
+    <!-- Include/configure some extra Generic sniffs -->
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
     <rule ref="Generic.Commenting.Fixme"/>
@@ -104,12 +104,33 @@
         </properties>
     </rule>
     <rule ref="Generic.PHP.NoSilencedErrors"/>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedCatch">
+        <severity>0</severity>
+    </rule>
 
     <!-- Include some extra PEAR sniffs -->
     <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
     <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
 
+    <!-- Configure PHPCompatibility rules -->
+    <rule ref="PHPCompatibility.PHP.ForbiddenNamesAsInvokedFunctions.Found">
+        <exclude-pattern>src/Sincos/*/src/Database/Migrations/*</exclude-pattern>
+        <exclude-pattern>src/Sincos/*/src/Http/routes.php</exclude-pattern>
+        <exclude-pattern>src/SincosApps/*/src/Database/Migrations/*</exclude-pattern>
+        <exclude-pattern>src/SincosApps/*/src/Http/routes.php</exclude-pattern>
+    </rule>
+
     <!-- Configure some Squiz sniffs -->
+    <rule ref="Squiz.Classes.ClassFileName">
+        <exclude-pattern>src/Sincos/*/src/Database/Migrations/*</exclude-pattern>
+        <exclude-pattern>src/SincosApps/*/src/Database/Migrations/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.BlockComment">
+        <exclude-pattern>config/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.InlineComment">
+        <exclude-pattern>config/*</exclude-pattern>
+    </rule>
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets">
         <severity>0</severity>
     </rule>
@@ -126,6 +147,9 @@
         <severity>0</severity>
     </rule>
     <rule ref="Squiz.NamingConventions.ValidVariableName.NotCamelCaps">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps">
         <severity>0</severity>
     </rule>
     <rule ref="Squiz.Strings.ConcatenationSpacing">

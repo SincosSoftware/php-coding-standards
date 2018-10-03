@@ -2,8 +2,7 @@
   "name": "sincos/php-coding-standards",
   "type": "project",
   "description": "Sincos PHP Coding Standards",
-  "license": "proprietary",
-  "version": "dev-master",
+  "license": "MIT",
   "homepage": "http://24nettbutikk.no",
   "authors": [
     {
@@ -19,5 +18,10 @@
     "slevomat/coding-standard": "^4.0"
   },
   "require-dev": {
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
   }
 }

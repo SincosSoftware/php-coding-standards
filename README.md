@@ -16,6 +16,9 @@ touch tests/_output/.gitkeep
 
 PHPCS and PHPMD will dump their reports in this folder.
 
+#### Ignore files in the new _output folder
+Add `tests/_output` to your `.gitignore` file.
+
 #### Add phpcs.xml
 
 Here is an example file:

@@ -6,7 +6,7 @@ Common PHP coding standards for use in our PHP projects.
 In a PHP project, do the following to set up the coding standards check:
 
 #### Require the package
-`require --dev sincos/php-coding-standards`
+`composer require --dev sincos/php-coding-standards`
 
 #### Add an empty tests output folder
 ```

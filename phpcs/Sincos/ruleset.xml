@@ -69,6 +69,7 @@
         <exclude name="Squiz.PHP.CommentedOutCode"/>
         <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
         <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
+        <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedBool"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
         <exclude name="Squiz.Scope.StaticThisUsage.Found"/>
         <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>

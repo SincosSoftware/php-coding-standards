@@ -2,8 +2,6 @@
 <ruleset name="Sincos Coding Standard">
     <description>Sincos Software PHP coding standard.</description>
 
-    <config name="installed_paths" value="../../wimg/php-compatibility/PHPCompatibility,../../slevomat/coding-standard" />
-
     <arg name="extensions" value="php"/>
 
     <!-- Include whole rulesets -->
